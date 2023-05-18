@@ -1,0 +1,113 @@
+<!doctype html><html class="" lang=""><head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- End of generator meta tag -->
+    <script src="js/jquery.js"></script>
+    
+    
+    <script src="js/front-end.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/front-end.css">
+
+    
+    <script class="silex-script"></script>
+    
+    <title> - Page 1</title>
+    
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+
+<body class="body-initial all-style prevent-resizable prevent-selectable editable-style enable-mobile silex-runtime silex-published" data-current-page="page-page-1">
+    
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="editable-style section-element silex-id-1474394621033-3 page-page-1 paged-element paged-element-visible"><div class="editable-style container-element silex-id-1474394621032-2 website-width" title=""><div class="editable-style html-element silex-id-1682960067121-5"><div class="silex-element-content">
+
+  
+    <meta charset="UTF-8">
+    <title>Video Player</title>
+    
+  
+  
+    <div id="video-container">
+      <video id="video" muted="">
+        <source src="assets/Website%20Start.mp4" type="video/mp4">
+      </video>
+    </div>
+    <audio id="audio" controls="" loop="">
+      <source src="assets/riser.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      var video = document.getElementById("video");
+      var audio = document.getElementById("audio");
+
+      video.addEventListener("play", function() {
+        audio.play();
+      });
+
+      video.addEventListener("pause", function() {
+        audio.pause();
+      });
+
+      document.addEventListener("click", function() {
+        var videoContainer = document.getElementById("video-container");
+        videoContainer.style.display = "block";
+        setTimeout(function() {
+          videoContainer.style.opacity = "1";
+          video.play();
+          setTimeout(function() {
+            videoContainer.style.transition = "none";
+            window.location.href = "base.html";
+          }, 6000); // Change the delay time (in milliseconds) to adjust the fade transition duration
+        }, 10);
+      });
+    </script>
+  
+
+</div></div></div></section><div class="editable-style html-element silex-id-1682958071769-2"><div class="silex-element-content">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+
+	<img id="my-image" src="assets/untitled.jpg" alt="your-image-description">
+	<script>
+		const image = document.getElementById("my-image");
+		const flickerInterval = setInterval(() => {
+			image.classList.toggle("flicker", Math.random() < 0.5);
+		}, 100);
+
+	</script>
+
+
+</div></div></body></html>
