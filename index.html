@@ -4,12 +4,12 @@
     <!-- leave this for stats and Silex version check -->
     <meta name="generator" content="Silex v2.2.14">
     <!-- End of generator meta tag -->
-    <script src="js/jsindex/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     
     
-    <script src="js/jsindex/front-end.js"></script>
-    <link rel="stylesheet" href="css/cssindex/normalize.css">
-    <link rel="stylesheet" href="css/cssindex/front-end.css">
+    <script src="js/front-end.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/front-end.css">
 
     
     <script class="silex-script"></script>
@@ -18,7 +18,7 @@
     
 
     
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/jsindex/script.js"></script><link href="css/cssindex/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
 <body class="body-initial all-style prevent-resizable prevent-selectable editable-style enable-mobile silex-runtime silex-published" data-current-page="page-page-1">
     
@@ -61,6 +61,7 @@
     <div id="video-container">
       <video id="video" muted="">
         <source src="assets/Website%20Start.mp4" type="video/mp4">
+        <source src="assets/mobilestart.mp4" type="video/mp4" media="(max-width: 600px)">
       </video>
     </div>
     <audio id="audio" controls="" loop="">
@@ -106,7 +107,6 @@
 		const flickerInterval = setInterval(() => {
 			image.classList.toggle("flicker", Math.random() < 0.5);
 		}, 100);
-
 	</script>
 
 
