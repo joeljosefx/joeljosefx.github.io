@@ -49,7 +49,7 @@
 
 
 
-<section class="editable-style section-element silex-id-1474394621033-3 page-page-1 paged-element paged-element-visible"><div class="editable-style container-element silex-id-1474394621032-2 website-width" title=""><div class="editable-style html-element silex-id-1682960067121-5"><div class="silex-element-content">
+<section class="editable-style section-element silex-id-1474394621033-3 page-page-1 paged-element paged-element-visible"><div class="editable-style container-element silex-id-1474394621032-2 website-width" title=""><div class="editable-style html-element silex-id-1682960067121-5 hide-on-mobile"><div class="silex-element-content">
 
   
     <meta charset="UTF-8">
@@ -93,7 +93,67 @@
     </script>
   
 
-</div></div></div></section><div class="editable-style html-element silex-id-1682958071769-2"><div class="silex-element-content">
+</div></div><div class="editable-style html-element silex-id-1685305793581-1 hide-on-desktop"><div class="silex-element-content">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+
+	<img id="my-image" src="assets/untitledmobile.jpg" alt="your-image-description">
+	<script>
+		const image = document.getElementById("my-image");
+		const flickerInterval = setInterval(() => {
+			image.classList.toggle("flicker", Math.random() < 0.5);
+		}, 100);
+
+	</script>
+
+
+</div></div></div></section><div class="editable-style html-element silex-id-1685306283006-1"><div class="silex-element-content">
+
+  
+    <meta charset="UTF-8">
+    <title>Video Player</title>
+    
+  
+  
+    <div id="video-container">
+      <video id="video" muted="">
+        <source src="assets/mobilestart.mp4" type="video/mp4" media="(max-width: 600px)">
+      </video>
+    </div>
+    <audio id="audio" controls="" loop="">
+      <source src="assets/riser.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      var video = document.getElementById("video");
+      var audio = document.getElementById("audio");
+
+      video.addEventListener("play", function() {
+        audio.play();
+      });
+
+      video.addEventListener("pause", function() {
+        audio.pause();
+      });
+
+      document.addEventListener("click", function() {
+        var videoContainer = document.getElementById("video-container");
+        videoContainer.style.display = "block";
+        setTimeout(function() {
+          videoContainer.style.opacity = "1";
+          video.play();
+          setTimeout(function() {
+            videoContainer.style.transition = "none";
+            window.location.href = "base.html";
+          }, 6000); // Change the delay time (in milliseconds) to adjust the fade transition duration
+        }, 10);
+      });
+    </script>
+  
+
+</div></div><div class="editable-style html-element silex-id-1682958071769-2 hide-on-mobile"><div class="silex-element-content">
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,6 +166,7 @@
 		const flickerInterval = setInterval(() => {
 			image.classList.toggle("flicker", Math.random() < 0.5);
 		}, 100);
+
 	</script>
 
 
